@@ -12,6 +12,7 @@ import Image from "next/image";
 const HeroContent = () => {
   return (
     <motion.div
+      style={{ paddingTop: "5.7rem" }}
       initial="hidden"
       animate="visible"
       className="flex flex-col md:flex-row items-center justify-center px-20 mt-20  w-full z-[20] "
@@ -49,7 +50,7 @@ const HeroContent = () => {
           mobile, and software development . check out my projects and skills .
         </motion.p>
         <motion.a
-          href="#"
+          href="PowerPoint.pdf"
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
@@ -62,7 +63,7 @@ const HeroContent = () => {
         className="h-full w-full flex items-center justify-center"
       >
         <Image
-          src="/7E3A3460-removebg.png"
+          src="/7E3A3452-removebg3.png"
           alt="work icon"
           height={650}
           width={650}
