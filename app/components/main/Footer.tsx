@@ -1,50 +1,61 @@
 import React from "react";
-import { RxGithubLogo, RxInstagramLogo } from "react-icons/rx";
 import { AiOutlineMail } from "react-icons/ai";
-
-import { FaYoutube } from "react-icons/fa";
+import { Socials } from "@/constants";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px]">
-      <div className="w-full h-full flex flex-col items-center justify-center m-auto  ">
-        <div className=" w-full h-full flex flex-row items-center justify-around flex-wrap z-[30]">
-          <div className="min-w[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] "> Community</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxGithubLogo />
-              <span className="text-[15px] ml-[6px] "> Github </span>
-            </p>
-          </div>
-
-          <div className="min-w[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] "> Social Media </div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <RxInstagramLogo />
-              <span className="text-[15px] ml-[6px] "> Instagram </span>
-            </p>
-          </div>
-
-          <div className="min-w[200px] h-auto flex flex-col items-center justify-start">
-            <div className="font-bold text-[16px] "> About</div>
-            <p className="flex flex-row items-center my-[15px] cursor-pointer">
-              <a href=" #about-me" className="text-[15px] ml-[6px] ">
-                {" "}
-                Learning about me{" "}
-              </a>
-            </p>
-            <a
-              href="mailto:mohammed.hassan41995@gmail.com"
-              className="flex items-center my-2 cursor-pointer"
-            >
-              <AiOutlineMail />
-              <span className="text-[15px] ml-[6px] ">
+    <div className="w-full bg-gray-900 text-gray-200 py-10 ">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between">
+          {/* About Section */}
+          <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left space-y-6 md:space-y-0  z-[30]">
+            <div className="flex flex-col items-center md:items-start">
+              <h2 className="font-bold text-lg mb-2">About</h2>
+              <p className="mb-2">
+                <a
+                  href="#about-me"
+                  className="text-sm text-gray-400 hover:underline"
+                >
+                  Learning about me
+                </a>
+              </p>
+              <a
+                href="mailto:mohammed.hassan41995@gmail.com"
+                className="flex items-center justify-center md:justify-start text-sm text-gray-400 hover:underline"
+              >
+                <AiOutlineMail className="mr-2" />
                 mohammed.hassan41995@gmail.com
-              </span>
-            </a>
+              </a>
+            </div>
+          </div>
+
+          {/* Social Media Section */}
+          <div className="w-full md:w-1/2 flex flex-col items-center md:items-end text-center md:text-right space-y-6 md:space-y-0  z-[30]">
+            <div className="flex flex-col items-center md:items-end">
+              <h2 className="font-bold text-lg mb-2">Social Media</h2>
+              <div className="flex space-x-4 justify-center md:justify-end">
+                {Socials.map((Social) => (
+                  <a
+                    href={Social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    key={Social.name}
+                  >
+                    <Image
+                      src={Social.src}
+                      alt={Social.name}
+                      width={24}
+                      height={24}
+                      className="cursor-pointer"
+                    />
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-        <div className="mb-[20px] text-[15px] text-center z-[30]">
+        <div className="mt-6 text-center text-sm text-gray-500 ">
           &copy; WebDev 2024 Inc. All rights reserved
         </div>
       </div>

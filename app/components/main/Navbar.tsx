@@ -1,11 +1,19 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
-import { Socials } from "@/constants";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
+  const [nav, setNav] = useState(false);
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2a0e61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 ">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2a0e61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between">
         <a
           href="#about-me"
           className="h-auto w-auto flex flex-row items-center"
@@ -15,44 +23,63 @@ const Navbar = () => {
             alt="logo"
             width={50}
             height={50}
-            className="  cursor-pointer hover:animate-slowspin "
+            className="cursor-pointer hover:animate-slowspin"
           />
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
-          WebDev
+          <span className="font-bold ml-2 md:ml-4 hidden md:block text-gray-300">
+            WebDev
           </span>
         </a>
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
-            <a href="#about-me" className="cursor-pointer ">
+        <div className="hidden md:flex w-[500px] h-full items-center justify-between md:mr-5">
+          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] px-4 py-2 rounded-full text-gray-200">
+            <a href="#about-me" className="cursor-pointer mx-2">
               About me
             </a>
-            <a href="#Skills" className="cursor-pointer ">
+            <a href="#Skills" className="cursor-pointer mx-2">
               Skills
             </a>
-            <a href="#projects" className="cursor-pointer ">
+            <a href="#projects" className="cursor-pointer mx-2">
               Projects
             </a>
           </div>
         </div>
-        <div className="flex flex-row gap-5">
-          {Socials.map((Social) => (
-            <a
-              href={Social.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              key={Social.name}
-            >
-              <Image
-                src={Social.src}
-                alt={Social.name}
-                key={Social.name}
-                width={24}
-                height={24}
-                className=" cursor-pointer"
-              />
-            </a>
-          ))}
+        <div className="md:hidden flex items-center">
+          <button onClick={handleNav}>
+            {nav ? (
+              <AiOutlineClose size={24} className="text-gray-300" />
+            ) : (
+              <AiOutlineMenu size={24} className="text-gray-300" />
+            )}
+          </button>
         </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`${
+          nav ? "flex" : "hidden"
+        } md:hidden absolute top-[65px] left-0 w-full bg-[#1a1a2e] backdrop-blur-md z-50 flex-col items-center shadow-lg shadow-[#2a0e61]/50`}
+      >
+        <a
+          href="#about-me"
+          className="w-full text-center py-4 border-b border-[#7042f861] text-gray-200"
+          onClick={handleNav}
+        >
+          About me
+        </a>
+        <a
+          href="#Skills"
+          className="w-full text-center py-4 border-b border-[#7042f861] text-gray-200"
+          onClick={handleNav}
+        >
+          Skills
+        </a>
+        <a
+          href="#projects"
+          className="w-full text-center py-4 text-gray-200"
+          onClick={handleNav}
+        >
+          Projects
+        </a>
       </div>
     </div>
   );
