@@ -52,7 +52,7 @@ const HeroContent = () => {
           mobile, and software development. Check out my projects and skills.
         </motion.p>
         <motion.a
-          href="PowerPoint.pdf"
+          href="CV_Mohamed-hassan.pdf"
           target="_blank"
           rel="noopener noreferrer"
           variants={slideInFromLeft(1)}
