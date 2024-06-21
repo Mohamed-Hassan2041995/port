@@ -21,7 +21,7 @@ const Projects = () => {
           src="/task-manager.png"
           title=" Task Manager - Streamline Your Workflow"
           description="Task Manager is an intuitive and powerful tool designed to help you manage your tasks and projects efficiently. Whether you're working individually or as part of a team"
-          url="/https://manger-your-taske.netlify.app/"
+          url="https://manger-your-taske.netlify.app/"
         />
         <ProjectCard
           src="/NextWebsite.png"
