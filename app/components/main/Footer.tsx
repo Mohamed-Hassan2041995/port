@@ -56,7 +56,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-6 text-center text-sm text-gray-500 ">
-          &copy; WebDev 2024 Inc. All rights reserved
+          &copy; Mohamed Hassan 2024 Inc. All rights reserved
         </div>
       </div>
     </div>

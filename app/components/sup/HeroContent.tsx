@@ -32,7 +32,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 md:text-6xl text-4xl font-bold leading-[1.1] text-white"
+          className="flex flex-col gap-6 mt-6 md:text-5xl text-4xl font-bold leading-[1.1] text-white"
         >
           <span>
             Providing
@@ -42,14 +42,20 @@ const HeroContent = () => {
             </span>
             project experience
           </span>
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            I’m Mohamed Hassan
+          </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px] mx-auto md:mx-0"
         >
-          I&apos;m a front end software engineer with experience in website,
-          mobile, and software development. Check out my projects and skills.
+          I’m a front-end software engineer specializing in website, mobile, and
+          software development. With a focus on creating seamless and engaging
+          user experiences, I bring expertise in the latest technologies and
+          best practices. Explore my portfolio to see how I turn ideas into
+          reality and deliver high-quality solutions.
         </motion.p>
         <motion.a
           href="Mohamed_Hassan_cv.pdf"

@@ -25,8 +25,8 @@ const Projects = () => {
         />
         <ProjectCard
           src="/your-shop.png"
-          title=" Your Shop - Your perfect destination for online shopping"
-          description="Your Shop is your ultimate destination for stylish and high-quality fashion. As a modern and user-friendly e-commerce platform"
+          title=" come Shopping - Your perfect destination for online shopping"
+          description="come Shopping is your ultimate destination for stylish and high-quality fashion. As a modern and user-friendly e-commerce platform"
           url="https://come-shoping.netlify.app/"
         />
       </div>
