@@ -24,10 +24,10 @@ const Projects = () => {
           url="https://manger-your-taske.netlify.app/"
         />
         <ProjectCard
-          src="/NextWebsite.png"
-          title=" Modern Next.js portfolio"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate praesentium incidunt, obcaecati velit suscipit id?"
-          url="/#"
+          src="/your-shop.png"
+          title=" Your Shop - Your perfect destination for online shopping"
+          description="Your Shop is your ultimate destination for stylish and high-quality fashion. As a modern and user-friendly e-commerce platform"
+          url="https://come-shoping.netlify.app/"
         />
       </div>
     </div>
