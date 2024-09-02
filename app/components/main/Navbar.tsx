@@ -19,10 +19,10 @@ const Navbar = () => {
           className="h-auto w-auto flex flex-row items-center"
         >
           <Image
-            src="/logo.png"
+            src="/MOHAMED HASSAN.png"
             alt="logo"
-            width={50}
-            height={50}
+            width={100}
+            height={100}
             className="cursor-pointer hover:animate-slowspin"
           />
         </a>
