@@ -71,12 +71,12 @@ export const Frontend_skill = [
     width: 60,
     height: 60,
   },
-  {
-    skill_name: "vue js",
-    Image: "/vue.png",
-    width: 80,
-    height: 80,
-  },
+  // {
+  //   skill_name: "vue js",
+  //   Image: "/vue.png",
+  //   width: 80,
+  //   height: 80,
+  // },
   {
     skill_name: "sass",
     Image: "/sass.png",

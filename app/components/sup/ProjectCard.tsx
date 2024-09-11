@@ -34,7 +34,7 @@ const ProjectCard = ({
         <h1 className="text-2xl font-semibold text-white">{title}</h1>
         <p className="mt-2 text-gray-300">{description}</p>
         <p className="mt-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-          Languages: {languages}
+          Created by: {languages}
         </p>{" "}
         <a
           href={github}
