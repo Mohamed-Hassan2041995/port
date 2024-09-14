@@ -17,7 +17,7 @@ const Footer = () => {
                   href="#about-me"
                   className="text-sm text-gray-400 hover:underline"
                 >
-                  Learning about me
+                  Contact me{" "}
                 </a>
               </p>
               <a
