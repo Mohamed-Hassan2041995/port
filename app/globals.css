@@ -42,6 +42,11 @@
   rgba(113, 47 , 255 ,0.24);
   box-shadow: inset 0 0 12px #bf97ff70;
 }
+
+.box-shadow{
+  box-shadow:  0 -7px 25px #a48fff1f;
+
+}
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollbar-hidden {
   -ms-overflow-style: none; /* IE and Edge */

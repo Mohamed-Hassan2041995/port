@@ -77,7 +77,7 @@ const HeroContent = () => {
           alt="work icon"
           height={650}
           width={650}
-          className="object-contain"
+          className="object-contain box-shadow"
           style={{
             borderRadius: "35%",
             border: " solid 1px #7042f861",
