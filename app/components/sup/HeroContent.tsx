@@ -73,11 +73,16 @@ const HeroContent = () => {
         className="h-full w-full flex items-center justify-center md:w-1/2"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src="/my.png"
           alt="work icon"
           height={650}
           width={650}
           className="object-contain"
+          style={{
+            borderRadius: "35%",
+            border: " solid 1px #7042f861",
+            marginTop: "1rem",
+          }}
         />
       </motion.div>
     </motion.div>
