@@ -58,7 +58,7 @@ const HeroContent = () => {
           reality and deliver high-quality solutions.
         </motion.p>
         <motion.a
-          href="Mohamed_Hassan_cv.pdf"
+          href="MOHAMED-HASSAN.pdf"
           target="_blank"
           rel="noopener noreferrer"
           variants={slideInFromLeft(1)}
